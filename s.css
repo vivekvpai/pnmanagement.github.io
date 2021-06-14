@@ -1,0 +1,143 @@
+.sty
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-color
+{
+    background-color: #94618e;
+}
+
+.pd
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg-flex
+{
+    background-color : #49274a; color : #f4decb; 
+}
+
+.carousel-item img {
+  position: center;
+  height: 300px;
+  width: 100%;
+}
+
+.jumbotron
+{
+    margin-bottom: 0px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: screen;
+    background-image: url("Images/SSA_logo.jpg");
+    background-color: #94618e;
+}
+
+#side_bar{
+  height: 700px;
+  background-color : #49274a;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  padding : 0px 0px 0px 0px;
+  }
+
+@media (max-width: 580px) 
+  {
+  #side_bar{
+      height: auto;
+      background-color : #49274a;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      position: relative;
+      padding : 0px 0px 0px 0px;
+    }
+}
+
+#side_bar p
+{
+  color : #49274a; 
+  background-color : #f4decb;
+}
+
+.fa-home, .fa-lock, .fa-unlock, .fa-envelope, .fa-user-plus
+{
+  padding: 5px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fa-user-plus, .fa-plus-circle, .fa-plus-square, .fa-medkit
+  {
+      padding: 10px 5px 10px 5px;
+      font-size: 25px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      background-color : #49274a; 
+      color : white;
+      margin-right: 10px;
+
+  }
+
+.fa-users
+{
+    font-size: 90px;
+}
+
+  .fa-linkedin {
+    padding: 5px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-github {
+    padding: 5px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+  }
+
+  .footer
+  {
+      color: white;
+      padding: 20px 50px 10px 50px;
+      background-color: #1A1A1D;
+  }
+.cd-pd
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width:992px) {
+    .parallax {
+          /* The image used */
+         
+        
+          /* Set a specific height */
+        
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-blend-mode: screen;
+          background-image: url("Images/govt1.jpg");
+          background-color: rgb(118, 104, 129);
+        }
+      }
+      

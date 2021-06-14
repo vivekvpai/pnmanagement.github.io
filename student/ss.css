@@ -1,0 +1,97 @@
+.sty
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-color
+{
+    background-color: #94618e;
+}
+
+.pd
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#side_bar p
+{
+  color : #49274a; 
+  background-color : #f4decb;
+}
+
+table
+{
+  background-color : #f4decb; box-shadow: 3px 3px 10px rgba(148,97,142, 15.0);
+}
+
+#side_bar{
+  height: 700px;
+  background-color : #49274a;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  padding : 0px 0px 0px 0px;
+  }
+
+@media (max-width: 580px) 
+  {
+  #side_bar{
+      height: auto;
+      background-color : #49274a;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      position: relative;
+      padding : 0px 0px 0px 0px;
+    }
+}
+
+
+marquee img
+{
+  height: 125px;
+  width: 100%;
+}
+
+.scrol
+  {
+      height : 350px;
+      overflow: auto;
+  }
+
+.fa-home, .fa-lock, .fa-envelope
+{
+  padding: 5px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+  .fa-linkedin {
+    padding: 5px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-github {
+    padding: 5px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+  }
+
+  .footer
+  {
+      color: white;
+      padding: 20px 50px 10px 50px;
+      background-color: #1A1A1D;
+  }
+
+
+
+      
