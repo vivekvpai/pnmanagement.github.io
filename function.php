@@ -1,4 +1,8 @@
 <?php
+session_start();
+
+if($_SESSION['user_id'] == session_id())
+    {
 	function get_std_count(){
 		$connection = mysqli_connect("remotemysql.com","bjBEokAclb","q8e75oGyd0");
 		$db = mysqli_select_db($connection,"bjBEokAclb");
@@ -46,5 +50,9 @@
 		}
 		return($ni_count);
     }
-
+}
+else
+	{
+		header("location:index.php");
+	}
 ?>

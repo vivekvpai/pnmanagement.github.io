@@ -61,6 +61,7 @@
                                     <button type="submit" name="login" class="btn btn-primary" > <i class="fa fa-unlock"></i> Login</button>
                                 </div>
                             </form>
+                            <!-- code for login -->
                             <?php
                                 session_start();
                                 if(isset($_POST['login']))
@@ -77,6 +78,7 @@
                                             {
                                                 $_SESSION['user_name'] = $row['user_name'];
                                                 $_SESSION['user_id'] = $row['user_id'];
+                                                $_SESSION['user_id'] = session_id();
                                                 header("Location:dashboard.php");
                                                 exit();
                                             }

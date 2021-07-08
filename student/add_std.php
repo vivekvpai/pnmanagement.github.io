@@ -1,5 +1,7 @@
 <?php 
     session_start();
+    if($_SESSION['user_id'] == session_id())
+    {
 ?>
 
 <!doctype html>
@@ -32,7 +34,7 @@
             <a class="navbar-brand" href="#"> <img src="../Images/images.jfif" alt="tabletimage" class="rounded-circle border" height="50" width="50"> Pills & Napkins Management</a>
             <ul class="nav navbar-nav navbar navbar-right">
                 <li class="nav-item"><a class="nav-link" href="../dashboard.php"><i class="fa fa-home fa-md"></i> Home</a></li> &nbsp
-                <li class="nav-item "><a class="nav-link btn-pd" href="../index.php"> <i class="fa fa-lock"></i> Logout</a></li> &nbsp
+                <li class="nav-item "><a class="nav-link btn-pd" href="../logout.php"> <i class="fa fa-lock"></i> Logout</a></li> &nbsp
                 
             </ul>
         </div>
@@ -216,6 +218,13 @@
 
         }
     </script>
+    <?php 
+        }
+        else
+            {
+                header("location:../index.php");
+            } 
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

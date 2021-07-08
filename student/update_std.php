@@ -1,6 +1,8 @@
 <?php
     session_start();
     require('../function.php');
+    if($_SESSION['user_id'] == session_id())
+    {
     $connection = mysqli_connect ("remotemysql.com","bjBEokAclb","q8e75oGyd0");
     $db = mysqli_select_db ($connection,"bjBEokAclb");
     $s_name = "";
@@ -228,6 +230,13 @@
 
         }
     </script>
+    <?php 
+        }
+        else
+            {
+                header("location:../index.php");
+            } 
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,6 +1,8 @@
 <?php 
     require('../function.php');
     session_start();
+    if($_SESSION['user_id'] == session_id())
+    {
     $connection = mysqli_connect("remotemysql.com","bjBEokAclb","q8e75oGyd0");
     $db = mysqli_select_db($connection,"bjBEokAclb");
     $t_name = "";
@@ -210,6 +212,13 @@
         <!-- Copyright -->
 
     </footer>
+    <?php 
+        }
+        else
+            {
+                header("location:../index.php");
+            } 
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,6 +1,8 @@
 <?php
     require('function.php');
     session_start();
+    if($_SESSION['user_id'] == session_id())
+    {
 ?>
 
 <!doctype html>
@@ -319,6 +321,13 @@
         <div class="footer-copyright text-center py-3">© 2020 Copyright
         </div>
         <!-- Copyright -->
+        <?php 
+            }
+            else
+                {
+                    header("location:index.php");
+                } 
+        ?>
 
     </footer>
 
