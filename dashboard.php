@@ -30,7 +30,7 @@
             <ul class="nav navbar-nav navbar navbar-right">
                 <div class="row text-justify">
                     <li class="nav-item active"><a class="nav-link" href="dashboard.html"><i class="fa fa-home fa-md"></i>Home</a></li> &nbsp
-                    <li class="nav-item"><a class="nav-link btn-pd" href="index.html"> <i class="fa fa-lock fa-md"></i> Logout</a></li> &nbsp  
+                    <li class="nav-item"><a class="nav-link btn-pd" href="logout.php"> <i class="fa fa-lock fa-md"></i> Logout</a></li> &nbsp  
                 </div>
             </ul>
         </div>
