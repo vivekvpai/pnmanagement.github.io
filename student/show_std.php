@@ -3,9 +3,9 @@
     session_start();
     if($_SESSION['user_id'] == session_id())
     {
-    $connection = mysqli_connect("remotemysql.com","bjBEokAclb","q8e75oGyd0");
-    $db = mysqli_select_db($connection,"bjBEokAclb");
-    $s_id = "";
+        $connection = mysqli_connect("remotemysql.com","bjBEokAclb","q8e75oGyd0");
+        $db = mysqli_select_db($connection,"bjBEokAclb");
+        $s_id = "";
     $s_name = "";
     $class = "";
     $gender = "";

@@ -142,28 +142,28 @@
         </footer>
 
         <script type="text/javascript">
-            function validate()
-            {
-                var userid = document.getElementById("user_id");
-                var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                var pwd = document.getElementById("password");
+            // function validate()
+            // {
+            //     var userid = document.getElementById("user_id");
+            //     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            //     var pwd = document.getElementById("password");
 
-                if (userid.value.match(validRegex)) 
-                {
-                    return true;
-                }
-                else 
-                {
-                    alert("Invalid email address!");
-                    return false;
-                }
+            //     if (userid.value.match(validRegex)) 
+            //     {
+            //         return true;
+            //     }
+            //     else 
+            //     {
+            //         alert("Invalid email address!");
+            //         return false;
+            //     }
 
-                if(pwd.value.length < 5) 
-                {
-                    alert("Password length is to small");
-                    return false;
-                }
-            }
+            //     if(pwd.value.length < 5) 
+            //     {
+            //         alert("Password length is to small");
+            //         return false;
+            //     }
+            // }
         </script>
 
         <!-- Optional JavaScript -->
